@@ -121,5 +121,6 @@ For deploying the project I used [heroku](https://heroku.com)
 
 https://teams-2.herokuapp.com
 
+> This Web App was developed by Tanvi Dahiya
 
 
