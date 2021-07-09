@@ -820,7 +820,7 @@ span.time {
 
 .chat .message {
   display: inline-block;
-  color: white;
+  color: black;
   padding: 0.5rem;
   margin-top: 0.25rem;
   border-radius: 0.85rem;
