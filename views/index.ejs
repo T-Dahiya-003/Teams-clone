@@ -1,0 +1,69 @@
+<!-- Home Page -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid nav-contcnt">
+        <a class="navbar-brand" href="#" style="color: #0f1113;"> <span style="font-weight: bold;">TEAMS 2.0</span></a>
+        <div class="d-flex">
+            <p class="m-0 px-3" style="font-weight: bold; color: #5F6368;">
+                <%= user.name %>
+            </p>
+            <a class="icon" href="/logout">
+                <button class="btn btn-sm btn-info" type="button">LOGOUT</button>
+            </a>
+        </div>
+        <style>
+            @media (max-width: 440px) {
+                .nav-contcnt {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .new-meeting {
+                    width: 125px;
+                    white-space: nowrap;
+                }
+            }
+
+        </style>
+    </div>
+</nav>
+<div class="container py-5">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <h1 class="mb-3">
+                Welcome to <strong>TEAMS 2.0</strong>
+            </h1>
+            <h4 style="color: #5F6368;">Video Conferencing now made easy !!</h4>
+            <div class="a123 my-5" style="display: flex; ">
+                <a class="btn btn-info new-meeting" style="width: 180px;" href="/new-meeting" role="button">NEW MEETING</a>
+                <form action="join-room" style="margin-left: 1rem;" method="POST">
+                    <div class="input-group ">
+                        <span class="input-group-text" id="inputGroup-sizing-default">
+                            <ion-icon name="add-circle-outline"></ion-icon>
+                        </span>
+                        <input name="room_id" type="text" class="form-control" placeholder="Enter a code or Link"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-info" type="submit" id="button-addon2">JOIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="box-shadow: 0 0 5px #8a93e2;">
+                <div class="card-body">
+                    <img src="/images/ss.jpeg" width="100%" class="rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body {
+        background-image:url("https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95d09002a.png");
+        height: 600px;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+</style>
