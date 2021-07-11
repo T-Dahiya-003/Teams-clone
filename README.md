@@ -1,6 +1,6 @@
 # Teams-clone
 
-This project is based on building a Microsoft Teams Clone .It id done under Microsoft Engage Mentorship program'21. 
+This project is based on building a Microsoft Teams Clone .It is done under Microsoft Engage Mentorship program'21. 
 
 It is a Web Application through which one can do video meetings with multiple participants.
 
