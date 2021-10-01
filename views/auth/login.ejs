@@ -1,12 +1,17 @@
-<!-- login page  -->
-<div class="container py-5"
+<div class="container py-5" 
     style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-    <h3 class="text-center mb-3">LOGIN</h3>
-    <div class="card border-info mb-3 " style="width:100%; max-width: 30rem;">
-  <div style="display: flex; justify-content: space-between; align-items: center; background-color: #d4f2fa;" class="card-header">
-            <p class="m-0">Login </p><a href="/signup" type="button" class="btn btn-outline-info">Sign Up</a>
+    
+    <h3 class="text-center mb-3" style= "color:#ffffff; font-size: 38px;">TEAMS 2.0</h3>
+    <!--Image -->
+    <div class="card" style="width:100%; max-width: 35rem;">
+        <div class="card" style="box-shadow: 0 0 5px #b8b8b8;">
+            <div class="card-body-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSajZmDxDFDHGaR7dASRW_R86ZlgLCa3-GHXA&usqp=CAU" width="100%" class="rounded" alt="">
         </div>
-        <div class="card-body " >
+        <div style="display: flex; justify-content: space-between; align-items: center; background-color:#6264a7; color:whitesmoke" class="card-header">
+            <p class="m-0">LOGIN</p><a href="/signup" type="button" class="btn btn-outline-success">Sign Up</a>
+        </div>
+        <div class="card-body">
             <form action="/login" method="POST">
                 <% if(locals.messages.success){ %>
                     <div class="alert alert-success" role="alert">
@@ -21,28 +26,44 @@
                                 <div class="mb-3">
                                     <label class="form-label">Username</label>
                                     <div class="input-group">
-                                        <input name="username" type="text" class="form-control" placeholder="Enter Username">
                                         <div class="input-group-text">
                                             <ion-icon name="person-circle-outline"></ion-icon>
                                         </div>
+                                        <input name="username" type="text" class="form-control" placeholder="Username">
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Password</label>
                                     <div class="input-group">
-                                        <input name="password" type="password" class="form-control" placeholder="Enter Password">
                                         <div class="input-group-text">
                                             <ion-icon name="lock-closed-outline"></ion-icon>
                                         </div>
+                                        <input name="password" type="password" class="form-control"
+                                            placeholder="Password">
                                     </div>
                                 </div>
-                                <button style="width: 100%;" type="submit" class="btn btn-outline-info">Login</button>
+                                <button style="width: 100%; background-color: #6264a7;" type="submit" class="btn btn-primary">Login</button>
             </form>
         </div>
-    </div>
-</div>
 
 <style>
+      .card-body-image{
+                height: 250px;
+                width: 250px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .btn-outline-success{
+                     color:whitesmoke;
+                     border: #6264a7;
+                     
+            }
+            .btn-outline-success:hover{
+                     color:#6264a7;
+                     background-color: whitesmoke;
+                     border: whitesmoke;
+            }
     body {
          display: flex;
         justify-content: center;
