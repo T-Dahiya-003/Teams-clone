@@ -8,11 +8,12 @@ window.onload = function () {
         <div class="spinner-item"></div>
         <div class="spinner-item"></div>
         <div class="spinner-item"></div>
+        <div class="spinner-item"></div>
         </div>
-        <p>Loading...</p>
+        <p>Loading....</p>
     </div>`;
   document.body.appendChild(loader);
   setTimeout(() => {
     loader.remove();
-  }, 3000);
+  }, 5000);
 };
